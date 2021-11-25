@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Calculadora FIAP"/>
+    
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Informe o primeiro número inteiro"/>
+
+
+    <!-- hint - para aparecer texto na linha (placeholder)-->
+    <!--  input type utilizado para "forçar" o usuário a digitar o que queremos (nesse caso n. inteiro) -->
+     <EditText
+         android:hint="Ex: 10"
+         android:id="@+id/edtNumero01"
+         android:inputType="number"
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Informe o segundo número inteiro"/>
+
+    <EditText
+        android:hint="Ex: 20"
+        android:id="@+id/edtNumero02"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <!--evento de somar (onclick), vai chamar o método no Kotler-->
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:onClick="somar"
+        android:text="Somar"/>
+
+    <!--"@+id/textResultado" - após a barra colocar sigla do componente, nesse caso txt-->
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="A soma atual é: 0" />
+
+
+
+</LinearLayout>
+
+
+
+
+
+
